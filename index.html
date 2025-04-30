@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tỏ tình Thái Thị Thu Thủy 💘</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #fff0f5;
+            padding-top: 50px;
+        }
+        h1 {
+            color: #ff1493;
+        }
+        #yeu, #hon, #vo {
+            display: none;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Gửi đến Thái Thị Thu Thủy 💌</h1>
+    
+    <button onclick="dongY()">Thủy đồng ý làm người yêu Hiếu nhé?</button>
+    <button onclick="tuChoi()">Không</button>
+
+    <p id="yeu">Hiếu yêu Thủy nhiều lắm 🧡</p>
+    <button id="hon" onclick="alert('Chụt 😘')">Hôn 1 cái 😘</button>
+    <p id="vo">Vậy thì làm vợ Hiếu luôn nhé! 💍</p>
+
+    <script>
+        function dongY() {
+            document.getElementById('yeu').style.display = 'block';
+            document.getElementById('hon').style.display = 'inline-block';
+            document.getElementById('vo').style.display = 'none';
+        }
+
+        function tuChoi() {
+            document.getElementById('vo').style.display = 'block';
+            document.getElementById('yeu').style.display = 'none';
+            document.getElementById('hon').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
